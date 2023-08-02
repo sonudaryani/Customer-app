@@ -1,3 +1,9 @@
 # Customer-app
 
-A HTML CSS Javascript based web app which fetch data from live api [https://qa2.sunbasedata.com/sunbase/portal/api/assignment.jsp]
+A HTML CSS Javascript based web app which fetch data from live api 
+
+## Screenshot
+
+![image](https://github.com/sonudaryani/Customer-app/blob/master/Screenshot%20(3).png)
+![image](https://github.com/sonudaryani/Customer-app/blob/master/Screenshot%20(4).png)
+![image](https://github.com/sonudaryani/Customer-app/blob/master/Screenshot%20(5).png)
