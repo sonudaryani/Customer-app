@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 10px 300px 10px;
+}
+form{
+    margin-top: 10px;
+    
+    
+}
+.form-input{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+p{
+    margin: 10px 0px 10px;
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button{
+    margin-top: 10px;
+    width: 30%;
+    padding: 10px;
+    background-color: #3708f1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .form-input{
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        margin: 10px 50px 10px;
+    }
+}

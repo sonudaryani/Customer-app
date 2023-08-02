@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#customer-page-btn{
+    margin: 10px;
+    width: 20%;
+    padding: 10px;
+    background-color: #3708f1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+table{
+    width: 90%;
+    margin: 10px 10px 0px 10px;
+}
+th{
+    background-color: #3708f1;
+    color: #fff;
+}
+th, td{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+td, tr{
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#action > button {
+    background-color: transparent;
+    border: none;
+    color: #3708f1;
+    cursor: pointer;
+}

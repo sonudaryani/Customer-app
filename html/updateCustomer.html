@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Mulish:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/addCustomer.css">
+    <title>Edit Customer Details</title>
+</head>
+<body>
+    <h1>Edit Customer Details</h1>
+    <form id="add-customer-container">
+        <div class="form-input">
+            <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+            <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+            <input type="text" name="address" id="street" placeholder="Street">
+            <input type="text" name="address" id="address" placeholder="Address">
+            <input type="text" name="city" id="city" placeholder="City">
+            <input type="text" name="state" id="state" placeholder="State">
+            <input type="text" name="email" id="email" placeholder="Email">
+            <input type="text" name="phone" id="phone" placeholder="Phone">
+            </div>
+        <div>
+            <p id="message" style="color: green;"></p>
+            <button id="update-customer-btn">Submit</button>
+        </div>
+    </form>
+    <script src="/js/update.js"></script>
+</body>
+</html>
