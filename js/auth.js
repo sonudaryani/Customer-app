@@ -35,7 +35,7 @@ async function authenticateUser() {
     }
   }
   
-
+//login button event handler
 document.getElementById("login-btn").addEventListener("click", event => {
     event.preventDefault();
     authenticateUser();

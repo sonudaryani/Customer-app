@@ -3,6 +3,8 @@ const baseUrl = 'https://qa2.sunbasedata.com/sunbase/portal/api/assignment.jsp';
 const authToken = "Bearer " + bearerToken;
 const message = document.getElementById("message");
 
+
+//function to edit customer object from form input data by user
 function editCustomer(){
     const firstName = document.getElementById("firstName").value;
     const lastName = document.getElementById("lastName").value;
@@ -33,6 +35,7 @@ function editCustomer(){
     return customerData;
 }
 
+//function to update customer to database
 function updateCustomer(){
     const uuid = sessionStorage.getItem("uuid");
     fetch(`${baseUrl}?cmd=update&uuid=${uuid}`, {
@@ -59,6 +62,7 @@ function updateCustomer(){
     });
 }
 
+//event listener for update button
 document.getElementById("update-customer-btn").addEventListener("click", event => {
     event.preventDefault();
     updateCustomer();

@@ -2,6 +2,7 @@ const bearerToken = sessionStorage.getItem("bearerToken") || "";
 const baseUrl = 'https://qa2.sunbasedata.com/sunbase/portal/api/assignment.jsp';
 const authToken = "Bearer " + bearerToken;
 
+//function to create customer object from form input data by user
 function createCustomer(){
     const firstName = document.getElementById("firstName").value;
     const lastName = document.getElementById("lastName").value;
@@ -32,6 +33,8 @@ function createCustomer(){
     return customerData;
 }
 
+
+//function to add customer to database
 function addCustomer(){
     const customerData = createCustomer();
     const apiUrl = `${baseUrl}?cmd=create`;
@@ -57,6 +60,9 @@ function addCustomer(){
         console.error(error);
     });
 }
+
+
+//event listener for add customer button
 document.getElementById("add-customer-btn").addEventListener("click", event => {
     event.preventDefault();
     addCustomer();

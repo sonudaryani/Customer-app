@@ -3,6 +3,8 @@ const baseUrl = 'https://qa2.sunbasedata.com/sunbase/portal/api/assignment.jsp';
 const authToken = "Bearer " + bearerToken;
 const tableBody = document.getElementById("customer-list");
 
+
+//fetch customer list from api
 function getCustomerList(){
     const apiUrl =  `${baseUrl}?cmd=get_customer_list`;
     fetch(apiUrl, {
@@ -22,6 +24,7 @@ function getCustomerList(){
 
 }
 
+//render customer list in table
 function renderData(data){
     tableBody.innerHTML = "";
     data.forEach((customer) => {
@@ -55,8 +58,10 @@ function renderData(data){
   });
 }
 
+//auto load customer list
 getCustomerList();
 
+// Function to handle delete button click
 function handleDelete(event) {
     const uuidElement = event.target.parentNode;
     const uuid = uuidElement.getAttribute('data-uuid');
@@ -66,7 +71,7 @@ function handleDelete(event) {
     tableBody.removeChild(row);
   }
   
-  // Function to delete a specific customer
+  // Function to delete a specific customer from the API
   function deleteCustomer(uuid) {
     const deleteUrl = `${baseUrl}?cmd=delete&uuid=${uuid}`;
           fetch(deleteUrl, {
@@ -87,6 +92,7 @@ function handleDelete(event) {
         });
   }
   
+  //event listener  to redirect us to add customer page
   document.getElementById("customer-page-btn").addEventListener("click", event => {
     event.preventDefault();
     window.location.href = "/html/addCustomer.html";
